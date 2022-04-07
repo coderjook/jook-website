@@ -70,21 +70,19 @@ export default function Caroussel({ selectedProject, setSelectedProject }) {
       <div className="slider">
         {images.map((image, index) => {
           return (
-            <>
-              <div className={classNameSlide[index]} id={index}>
-                <div
-                  className="projectname"
-                  onClick={() => chooseProject(image.keyword)}
-                >
-                  <center>{image.alt}</center>
-                </div>
-                <img
-                  src={image.img}
-                  alt={image.alt}
-                  onClick={() => chooseProject(image.keyword)}
-                />
+            <div className={classNameSlide[index]} id={index} key={index}>
+              <div
+                className="projectname"
+                onClick={() => chooseProject(image.keyword)}
+              >
+                <center>{image.alt}</center>
               </div>
-            </>
+              <img
+                src={image.img}
+                alt={image.alt}
+                onClick={() => chooseProject(image.keyword)}
+              />
+            </div>
           );
         })}
       </div>
