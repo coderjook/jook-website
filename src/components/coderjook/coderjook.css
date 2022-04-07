@@ -1,0 +1,102 @@
+.fly {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  /* width: 1180px;
+  max-width: 95%; */
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  background-image: url("/images/street.png");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.light {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  align-items: center;
+  background-image: url("/images/light.png");
+  background-size: cover;
+  background-position: center bottom;
+  animation: lighton 20s infinite;
+}
+
+@keyframes lighton {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.dark {
+  background-color: darkgrey;
+}
+
+.img-coderspook {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 83px;
+  width: 100px;
+  background-image: url("/images/flying-coderspook.png");
+  animation: wing 0.9s steps(6) infinite, fly 9s infinite both reverse,
+    jump 2s infinite;
+}
+
+@keyframes wing {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -590px;
+  }
+}
+
+@keyframes fly {
+  from {
+    transform: translateX(1200px) scale(0.6);
+  }
+  to {
+    transform: translateX(-200px) scale(0.6);
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 70px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .fly,
+  .light {
+    background-position: 70% bottom;
+  }
+}

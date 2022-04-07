@@ -1,0 +1,15 @@
+#kids,
+#develop,
+#mission {
+  animation: 2s ease-out show forwards;
+  background-color: #222222;
+}
+
+@keyframes show {
+  0% {
+    background-color: #222222;
+  }
+  100% {
+    background-color: var(--color-lightgrey);
+  }
+}
