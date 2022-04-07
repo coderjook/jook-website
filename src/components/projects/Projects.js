@@ -1,7 +1,7 @@
 import React from "react";
 import "./projects.css";
 
-export default function Projects({ selectedProject, setSelectedProject }) {
+export default function Projects({ selectedProject }) {
   return (
     <>
       {selectedProject === "jook" && (
@@ -10,10 +10,12 @@ export default function Projects({ selectedProject, setSelectedProject }) {
             <h2>JOOK.nl</h2>
             <h3>Inhoud</h3>
             <p>
-              Met de inhoud van deze website laat ik zien wie ik ben en waar
-              mijn interesses liggen. Ik heb deze website gemaakt om me te
-              verdiepen in css, positionering, responsive layout en css
-              animaties en transitions.
+              Met de inhoud van deze website laat ik zien waar ik me graag mee
+              bezig houd en waar ik me in verdiep.{" "}
+            </p>
+            <p>
+              Ik heb deze website gemaakt om me te verdiepen in css,
+              positionering, responsive layout en css animaties en transitions.
             </p>
             <h3 id="jook">Technieken</h3>
             <p>
@@ -23,8 +25,22 @@ export default function Projects({ selectedProject, setSelectedProject }) {
               React component: EmailJs
             </p>
             <div className="buttons">
-              <button onClick="#">Ga naar website</button>
-              <button onClick="#">Github</button>
+              <a
+                href="https://21mk8q.csb.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                codesandbox
+              </a>
+              <a
+                href="https://github.com/coderjook/jook-website.git"
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                Github
+              </a>
             </div>
           </div>
           <div className="div__img">
@@ -55,10 +71,6 @@ export default function Projects({ selectedProject, setSelectedProject }) {
               connectie: API connectie axios <br />
               React: useContext, React Router,
             </p>
-            {/* <div className="buttons">
-          <button onClick="#">Ga naar website</button>
-          <button onClick="#">Github</button>
-          </div> */}
           </div>
           <div className="div__img">
             <img src="./images/romal-pc.png" alt="jook.nl" />
@@ -87,11 +99,25 @@ export default function Projects({ selectedProject, setSelectedProject }) {
             <p>
               Framework: React / Typescript. <br />
               Opslag: Firebase storage en realtime database <br />
-              React: useContext, React Router,
+              React: useContext, React-Router-Dom,
             </p>
             <div className="buttons">
-              <button onClick="#">Ga naar website</button>
-              <button onClick="#">Github</button>
+              <a
+                href="https://scratch-tutorials.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                netlify
+              </a>
+              <a
+                href="https://github.com/coderjook/scratch-website.git"
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                Github
+              </a>
             </div>
           </div>
           <div className="div__img">

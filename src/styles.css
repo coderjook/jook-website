@@ -108,17 +108,20 @@ p {
   font-size: 1.2rem;
 }
 
-button {
+button,
+.btn {
   font-family: "Lora", serif;
   margin: 20px 5px;
   border: 1px solid #333;
   border-radius: 0;
   color: #333;
   padding: 10px;
+  text-decoration: none;
   cursor: pointer;
 }
 
-button:hover {
+button:hover,
+.btn:hover {
   font-weight: bold;
 }
 
@@ -303,7 +306,8 @@ span.leesmeer:hover {
     font-size: 0.9rem;
   }
 
-  button {
+  button,
+  .btn {
     font-family: "Lora", serif;
     margin: 20px 5px;
     border: 1px solid #333;
@@ -313,7 +317,8 @@ span.leesmeer:hover {
     cursor: pointer;
   }
 
-  button:hover {
+  button:hover,
+  .btn:hover {
     font-weight: bold;
   }
 
